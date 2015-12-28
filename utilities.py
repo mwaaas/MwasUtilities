@@ -16,12 +16,12 @@ class NotFound(object):
 not_found = NotFound()
 
 
-class CustomFilter(logging.Filter):
+class LogDjangoEnvironment(logging.Filter):
 
     def __init__(self):
         settings = os.environ.setdefault("DJANGO_SETTINGS_MODULE", "")
         self.environment = settings.split('.')[-1]
-        super(CustomFilter, self).__init__()
+        super(LogDjangoEnvironment, self).__init__()
 
     def filter(self, record):
         record.environment = self.environment
