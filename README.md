@@ -16,14 +16,14 @@ python setup.py sdist upload
 ###2. LogDjangoSettingEnvironment
 
     ### How to use it
-    from MwasUtilities.utilities import LogDjangoEnvironment
+    from MwasUtilities.utilities import LogDjangoSetting
     
     LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
     'filters': {
         'environment': {
-            '()':  LogDjangoEnvironment,
+            '()':  LogDjangoSetting,
         },
     },
     'handlers': {
