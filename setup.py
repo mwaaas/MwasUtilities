@@ -2,13 +2,12 @@ __author__ = 'Mwaaas'
 __email__ = 'francismwangi152@gmail.com'
 __phone_number__ = '+254702729654'
 
-
-from distutils.core import setup
+from setuptools import setup, find_packages
 
 setup(
     name='MwasUtilities',
-    version='0.0.3',
-    packages=[''],
+    version='0.0.4',
+    packages=find_packages(),
     url='',
     license='',
     author='mwas',
