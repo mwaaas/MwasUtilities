@@ -7,7 +7,7 @@ from distutils.core import setup
 
 setup(
     name='MwasUtilities',
-    version='0.0.2',
+    version='0.0.3',
     packages=[''],
     url='',
     license='',
